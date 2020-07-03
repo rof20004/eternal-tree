@@ -39,14 +39,14 @@
     </q-drawer>
 
     <q-page-container>
-      <transition-group
+      <transition
         appear
         enter-active-class="animated fadeIn"
         leave-active-class="animated fadeOut"
-        mode="in-out"
+        mode="out-in"
       >
-        <router-view key="mainLayout" />
-      </transition-group>
+        <router-view />
+      </transition>
     </q-page-container>
   </q-layout>
 </template>
@@ -66,9 +66,22 @@ export default {
       leftDrawerOpen: false,
       menus: [
         {
+          title: 'Home',
+          caption: 'Página com total de pontos',
+          icon: 'home',
+          link: '/home'
+        },
+        {
+          title: 'Livros',
+          caption: 'Lista de livros para ler',
+          icon: 'book',
+          link: '/books'
+        },
+        {
           title: 'Sair',
           caption: 'Sair da aplicação',
           icon: 'exit_to_app',
+          link: '#',
           isExitBtn: true
         }
       ]

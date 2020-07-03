@@ -9,6 +9,16 @@ const routes = [
   },
 
   {
+    path: '/books',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/Books.vue') },
+      { path: ':bookId', component: () => import('pages/Chapters.vue') },
+      { path: ':bookId/chapters/:chapterId', component: () => import('pages/ChapterContent.vue') }
+    ]
+  },
+
+  {
     path: '/',
     component: () => import('layouts/LandingPageLayout.vue'),
     children: [

@@ -5,8 +5,11 @@
         404
       </div>
 
-      <div class="text-h2" style="opacity:.4">
-        Oops. Nothing here...
+      <div
+        class="text-h2"
+        style="opacity:.4"
+      >
+        Oops. Não encontramos o que desejava...
       </div>
 
       <q-btn
@@ -15,7 +18,7 @@
         text-color="blue"
         unelevated
         to="/"
-        label="Go Home"
+        label="Ir para a página inicial"
         no-caps
       />
     </div>

@@ -1,9 +1,10 @@
 <template>
-  <div v-if="isExitBtn">
+  <div>
     <q-item
+      v-if="isExitBtn"
       clickable
       tag="a"
-      href="#"
+      :href="link"
       @click.prevent="exit"
     >
       <q-item-section
@@ -20,13 +21,12 @@
         </q-item-label>
       </q-item-section>
     </q-item>
-  </div>
 
-  <div v-else>
     <q-item
+      v-else
       clickable
       tag="a"
-      :href="link"
+      :to="link"
     >
       <q-item-section
         v-if="icon"

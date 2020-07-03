@@ -1,0 +1,94 @@
+[
+  {
+    "_id": "1593806386726",
+    "name": "Crônicas de Nárnia",
+    "type": "book",
+    "icon": "/icons/cronicas_de_narnia.jpg",
+    "chapters": [
+      {
+        "id": 1,
+        "title": "O início de tudo",
+        "type": "chapter",
+        "paragraphs": [
+          {
+            "id": 1,
+            "type": "paragraph",
+            "content": "Era uma vez, um mundo chamado Nárnia, ele era cheio de magia e coisas nunca vista antes no mundo normal. Certo dia, um garoto chamado Alfred resolveu brincar dentro de um guarda-roupas do seu avô, só que ele não sabia que ali era uma passagem secreta para o mundo de Nárnia."
+          },
+          {
+            "id": 2,
+            "type": "paragraph",
+            "content": "Alfred era um menino muito curioso, e quando ele viu uma luz vindo do fundo do guarda-roupas, resolveu ir até lá, e acontece algo inesperado, ele é puxado com força para Nárnia, e foi jogado bem longe da passagem entre os dois mundos."
+          },
+          {
+            "id": 3,
+            "type": "paragraph",
+            "content": "Alfred fica desacordado com a queda, mas por algum motivo sem explicação, ele não se machuca. Ao abrir os olhos ele se depara com um bixo que tinha cabeça de homem mas corpo de cavalo. Ele fica sem entender, assustado, e começa a tentar se comunicar com esse ser:",
+            "talks": [
+              "Alfred: Quem é você? Pergunta ao ser desconhecido",
+              "Ser desconhecido: Meu nome é Grande",
+              "Alfred: Sem problemas, eu tenho paciência, não sei onde estou, preciso de qualquer informação sobre esse lugar",
+              "Ser desconhecido: Mas eu já disse, meu nome é Grande!",
+              "Alfred: Hã? Seu nome é Grande, não porque ele tem muitas palavras, mas o seu nome real, é Grande?",
+              "Ser desconhecido: Isso mesmo",
+              "Grande: vi você caído e quis verificar o que aconteceu. O que aconteceu?",
+              "Alfred: não sei ainda"
+            ]
+          },
+          {
+            "id": 4,
+            "type": "paragraph",
+            "content": "Depois de muita conversa, Alfred percebe que na verdade está em Nárnia, o mundo daquela história que seu avô vivia contando."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "A feiticeira",
+        "type": "chapter",
+        "paragraphs": [
+          {
+            "id": 1,
+            "type": "paragraph",
+            "content": "Nárnia parecia ser um mundo maravilhoso, onde todos os seres viviam em harmonia, porém, isso só parecia, pois havia uma feiticeira capaz de qualquer coisa para dominar Nárnia."
+          },
+          {
+            "id": 2,
+            "type": "paragraph",
+            "content": "O nome dela era Creuza. Gostava de ficar atirando seus raios nos pássaros que passavam por cima de seu castelo, quando derepente, ele percebe alguma coisa caindo do céu. Ela ficou então desesperada, pois havia uma profecia que dizia que aquele que reinaria Nárnia, não seria ela, mas aquele que caiu do céu e sobreviveu."
+          },
+          {
+            "id": 3,
+            "type": "paragraph",
+            "content": "No momento em que ela percebe isso, ela lembra da profecia e dá ordens urgente para seus soldados investigarem o que era aquilo, mas para a surpresa dela, um dos soldados, cheio de alegria, grita:",
+            "talks": [
+              "Soldado: Ebaaa! Enfim ficaremos livre das perversidades da Creuza!"
+            ]
+          },
+          {
+            "id": 4,
+            "type": "paragraph",
+            "content": "Creuza decidi punir todos aqueles que falem sobre a profecia, então ela castiga seu soldado na mais terrível punição, a masmorra da cosquinha. Um lugar onde se entra triste, mas vive gargalhando para sempre."
+          }
+        ]
+      }
+    ],
+    "challenges": [
+      {
+        "chapter_id": 1,
+        "questions": [
+          {
+            "ask": "Qual o nome do personagem que sem querer encontrou a passagem secreta para Nárnia?",
+            "options": [
+              "Vovô Geraldo",
+              "Creuza",
+              "Grande",
+              "Alfred"
+            ],
+            "correct_position": 3
+          }
+        ]
+      }
+    ]
+  }
+]

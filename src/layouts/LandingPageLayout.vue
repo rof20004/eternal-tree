@@ -1,14 +1,14 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-page-container>
-      <transition-group
+      <transition
         appear
         enter-active-class="animated fadeIn"
         leave-active-class="animated fadeOut"
-        mode="in-out"
+        mode="out-in"
       >
-        <router-view key="landingPageLayout" />
-      </transition-group>
+        <router-view />
+      </transition>
     </q-page-container>
   </q-layout>
 </template>
