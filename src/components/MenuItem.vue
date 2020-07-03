@@ -4,7 +4,7 @@
       clickable
       tag="a"
       href="#"
-      @click.prevent="signOut"
+      @click.prevent="exit"
     >
       <q-item-section
         v-if="icon"
@@ -77,9 +77,8 @@ export default {
   },
 
   methods: {
-    signOut () {
-      this.$store.commit('auth/delUser')
-      this.$router.replace('/login')
+    exit () {
+      this.$router.replace('/')
     }
   }
 }

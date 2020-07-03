@@ -14,14 +14,15 @@
       </div>
 
       <div class="col-12 col-md-5 desktop-only">
-        <h1>Eternal Tree</h1>
-        <h5>Bem vindo ao sistema de leitura online gamificado, onde aprender e se divertir são os únicos objetivos &#x1F92A;</h5>
+        <h1 style="color: #3ECC64;"><b>Eternal Tree</b></h1>
+        <h5><em>Bem vindo ao sistema de leitura online gamificado, onde aprender e se divertir são os únicos objetivos &#x1F92A;</em></h5>
 
         <q-btn
           outline
           style="color: goldenrod;"
           size="20px"
           label="Começar"
+          to="/home"
         ></q-btn>
       </div>
 
@@ -35,6 +36,7 @@
           size="20px"
           class="full-width"
           label="Começar"
+          to="/home"
         ></q-btn>
       </div>
     </div>

@@ -39,7 +39,14 @@
     </q-drawer>
 
     <q-page-container>
-      <router-view />
+      <transition-group
+        appear
+        enter-active-class="animated fadeIn"
+        leave-active-class="animated fadeOut"
+        mode="in-out"
+      >
+        <router-view key="mainLayout" />
+      </transition-group>
     </q-page-container>
   </q-layout>
 </template>
