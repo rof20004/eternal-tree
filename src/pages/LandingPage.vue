@@ -1,16 +1,42 @@
  <template>
-  <q-page class="flex q-pa-md">
-    <div class="col-md-6">
-      <img src="~assets/landing_page.svg">
-    </div>
+  <q-page class="flex content-center q-pa-md">
+    <div class="row fit q-gutter-xl wrap">
+      <div class="col-12 col-md-5">
+        <q-img src="~assets/landing_page.svg"></q-img>
+      </div>
 
-    <q-separator
-      vertical
-      spaced
-    />
+      <div class="col-12 col-md-auto">
+        <q-separator
+          vertical
+          spaced
+          class="full-height"
+        />
+      </div>
 
-    <div class="col-md-6">
-      <h1>Hello</h1>
+      <div class="col-12 col-md-5 desktop-only">
+        <h1>Eternal Tree</h1>
+        <h5>Bem vindo ao sistema de leitura online gamificado, onde aprender e se divertir são os únicos objetivos &#x1F92A;</h5>
+
+        <q-btn
+          outline
+          style="color: goldenrod;"
+          size="20px"
+          label="Começar"
+        ></q-btn>
+      </div>
+
+      <div class="col-12 col-md-5 mobile-only">
+        <div class="text-h4">Eternal Tree</div>
+        <div class="text-body1 q-mb-md">Bem vindo ao sistema de leitura online gamificado, onde aprender e se divertir são os únicos objetivos &#x1F92A;</div>
+
+        <q-btn
+          outline
+          style="color: goldenrod;"
+          size="20px"
+          class="full-width"
+          label="Começar"
+        ></q-btn>
+      </div>
     </div>
   </q-page>
 </template>
