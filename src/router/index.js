@@ -26,17 +26,5 @@ export default function ({ store }) {
     base: process.env.VUE_ROUTER_BASE
   })
 
-  Router.beforeEach((to, from, next) => {
-    const token = store.getters['auth/user']
-
-    if (token && to.path === '/login') {
-      next('/')
-    } else if (!token && to.path !== '/login') {
-      next('/login')
-    } else {
-      next()
-    }
-  })
-
   return Router
 }
