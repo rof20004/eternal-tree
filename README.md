@@ -1,26 +1,31 @@
-# Eternal Tree (eternal-tree)
+# Eternal Tree
+Esse projeto consiste em um sistema pwa(Progressive Web App) que tem como objetivo democratizar e estimular a leitura através da gamificação, utilizando tecnologias da web, oferencendo uso online e offline, conteúdo diversificado de leitura e desafios.
 
-Sistema de leitura online gamificado
+## Tecnologias
+- Node >= v10.19.0
+- Yarn >= v1.22.4
+- Git
 
-## Install the dependencies
-```bash
-yarn
-```
+## Como executar
 
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+> Comandos executados em sistema baseado em Unix.
+> Necessário instalar as ferramentas citadas no item de tecnologias.
 
-### Lint the files
-```bash
-yarn run lint
-```
+a) Clonar o repositório
+- `git clone https://github.com/rof20004/eternal-tree.git`
 
-### Build the app for production
-```bash
-quasar build
-```
+b) Instalar as dependências
+- `cd eternal-tree`
+- `yarn`
 
-### Customize the configuration
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
+c) Subir a aplicação em modo de desenvolvimento
+- `quasar dev`
+
+d) Acessar através do seu browser o seguinte endereço
+- `http://localhost:8080`
+
+e) Gerar build para produção
+- `quasar build -m pwa`
+
+f) Copiar os arquivos que se encontram dentro da pasta abaixo para seu servidor web
+- `dist/pwa`
