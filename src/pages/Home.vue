@@ -9,7 +9,7 @@
 
       <div class="row">
         <div class="col-12">
-          <h2>1200 pts</h2>
+          <h2>{{ points }} pts</h2>
         </div>
       </div>
     </div>
@@ -18,6 +18,31 @@
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+
+  data () {
+    return {
+      points: 0
+    }
+  },
+
+  methods: {
+    async loadPoints () {
+      try {
+        const doc = await this.$pouchdb.get('points')
+        if (doc) {
+          this.points = doc.value
+        }
+      } catch (error) {
+        if (!error.status === 404) {
+          this.$root.$emit('showError', error)
+        }
+      }
+    }
+  },
+
+  mounted () {
+    this.loadPoints()
+  }
 }
 </script>

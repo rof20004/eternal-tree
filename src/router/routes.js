@@ -14,7 +14,8 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/Books.vue') },
       { path: ':bookId', component: () => import('pages/Chapters.vue') },
-      { path: ':bookId/chapters/:chapterId', component: () => import('pages/ChapterContent.vue') }
+      { path: ':bookId/chapters/:chapterId', component: () => import('pages/ChapterContent.vue') },
+      { path: ':bookId/chapters/:chapterId/challenges', component: () => import('pages/ChapterChallenges.vue') }
     ]
   },
 

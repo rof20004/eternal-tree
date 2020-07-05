@@ -50,7 +50,7 @@ export default {
         textColor: 'white',
         color: 'blue',
         message: message,
-        actions: [{ icon: 'close', color: 'white' }]
+        actions: [{ label: 'Fechar', color: 'black' }]
       })
     }
   },

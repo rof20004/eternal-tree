@@ -4,37 +4,47 @@
     v-if="chapter"
   >
     <div class="column fit items-center">
-      <div class="col-8">
-        <h3><u>{{ chapter.title }}</u></h3>
-      </div>
-
-      <div class="row justify-center">
-        <div class="col-10 col-md-8">
-          <p
-            v-for="paragraph in chapter.paragraphs"
-            :key="paragraph.id"
-            style="text-indent: 30px;font-size: 22px;text-align: justify;"
-          >
-
-            {{ paragraph.content }}
-
-            <ul v-if="paragraph.talks && paragraph.talks.length > 0">
-              <li
-                v-for="(talk, index) in paragraph.talks"
-                :key="index"
-                style="text-align: left;"
-              >{{ talk }}</li>
-            </ul>
-          </p>
-        </div>
-      </div>
+      <ChapterText :chapter="chapter" />
     </div>
+
+    <q-page-sticky
+      position="bottom-right"
+      :offset="[18, 18]"
+    >
+      <q-fab
+        color="amber"
+        text-color="black"
+        icon="keyboard_arrow_left"
+        direction="left"
+      >
+        <q-fab-action
+          color="amber"
+          text-color="black"
+          @click="toChallenges"
+          icon="games"
+          label="Desafios"
+        />
+        <q-fab-action
+          color="amber"
+          text-color="black"
+          @click="$router.go(-1)"
+          icon="keyboard_return"
+          label="Voltar"
+        />
+      </q-fab>
+    </q-page-sticky>
   </q-page>
 </template>
 
 <script>
+import ChapterText from 'components/ChapterText'
+
 export default {
-  name: 'Books',
+  name: 'ChapterContent',
+
+  components: {
+    ChapterText
+  },
 
   data () {
     return {
@@ -50,6 +60,10 @@ export default {
       } catch (error) {
         this.$root.$emit('showError', error)
       }
+    },
+
+    toChallenges () {
+      this.$router.push(`/books/${this.$route.params.bookId}/chapters/${this.$route.params.chapterId}/challenges`)
     }
   },
 

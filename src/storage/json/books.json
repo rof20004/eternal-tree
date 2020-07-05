@@ -78,6 +78,7 @@
         "chapter_id": 1,
         "questions": [
           {
+            "id": 1,
             "ask": "Qual o nome do personagem que sem querer encontrou a passagem secreta para Nárnia?",
             "options": [
               "Vovô Geraldo",
@@ -85,7 +86,25 @@
               "Grande",
               "Alfred"
             ],
-            "correct_position": 3
+            "correct_answer_position": 3,
+            "points": 10
+          }
+        ]
+      },
+      {
+        "chapter_id": 2,
+        "questions": [
+          {
+            "id": 1,
+            "ask": "Qual a punição mais terrível no mundo de Nárnia?",
+            "options": [
+              "Prisão no calabouço",
+              "Ataque de raios",
+              "Masmorra da cosquinha",
+              "A morte"
+            ],
+            "correct_answer_position": 2,
+            "points": 15
           }
         ]
       }

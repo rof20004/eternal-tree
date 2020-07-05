@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: 'Books',
+  name: 'Chapters',
 
   data () {
     return {
