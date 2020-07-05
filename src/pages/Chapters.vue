@@ -12,7 +12,7 @@
           :key="chapter.id"
           :to="`/books/${$route.params.bookId}/chapters/${chapter.id}`"
         >
-          <q-item-section no-wrap><b style="font-size: 24px;color: green;">Capítulo {{ chapter.id }}</b></q-item-section>
+          <q-item-section no-wrap><b style="font-size: 24px;color: green;">Capítulo {{ chapter.id }} - {{ chapter.title }}</b></q-item-section>
         </q-item>
       </q-list>
     </div>
