@@ -2,9 +2,14 @@
 Esse projeto consiste em um sistema pwa(Progressive Web App) que tem como objetivo democratizar e estimular a leitura através da gamificação, utilizando tecnologias da web, oferencendo uso online e offline, conteúdo diversificado de leitura e desafios.
 
 ## Tecnologias
-- Node >= v10.19.0
-- Yarn >= v1.22.4
+- Node >= v10.18.1
+- Yarn >= v1.21.1
+- NPM >= 6.13.4
 - Git
+
+## Frameworks
+- Vue.js >= 2.6.11
+- Quasar >= 1.12.8
 
 ## Como executar
 
