@@ -4,7 +4,7 @@
       <h3><u>Desafio - {{ chapter.title }}</u></h3>
     </div>
 
-    <div class="col-10 col-md-8">
+    <div class="col-10 col-md-8 q-mb-xl">
       <p
         v-for="question in questions"
         :key="question.id"
